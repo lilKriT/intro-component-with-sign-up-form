@@ -22,8 +22,9 @@ body {
   min-height: 100vh;
   background: center / cover url("images/bg-intro-desktop.png") var(--red);
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 2.5rem;
 }
 
 .ltc > div {
@@ -38,9 +39,35 @@ body {
 
 .ltc .left {
   color: #fff;
-  background-color: gray;
+  /* background-color: gray; */
+}
+
+.ltc .left h2 {
+  font-size: 3.125rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.ltc .left p {
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .ltc .right {
-  background-color: magenta;
+  /* background-color: magenta; */
+  color: #fff;
+}
+
+.ltc .right a.try-it {
+  color: #fff;
+  text-decoration: none;
+  background-color: var(--blue);
+  border-radius: 0.5rem;
+  text-align: center;
+  height: 3.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 0.5rem 0 rgb(0 0 0 / .3);
 }
