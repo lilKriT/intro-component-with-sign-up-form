@@ -97,3 +97,28 @@ body {
   outline: none;
   border: 2px solid var(--blue);
 }
+
+.ltc .sign-up-container input[type="submit"] {
+  color: #fff;
+  cursor: pointer;
+  /* outline: none; */
+  border: none;
+  background-color: var(--green);
+  box-shadow: 0 0.5rem 0 hsl(154, 58%, 39%);
+}
+
+.ltc .sign-up-container input[type="submit"]:focus {
+  outline: none;
+
+}
+
+.ltc .terms-of-service {
+  color: var(--grayish-blue);
+  font-size: 12px;
+}
+
+.ltc .terms-of-service a {
+  text-decoration: none;
+  color: var(--red);
+  font-weight: 700;
+}
