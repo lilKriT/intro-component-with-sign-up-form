@@ -17,7 +17,7 @@ submitBtn.addEventListener("click", (e) => {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  //   alert("submitting");
+  // alert("submitting");
   let firstName = firstNameField.value.trim();
   let lastName = lastNameField.value.trim();
   let email = emailField.value.trim();
@@ -25,8 +25,15 @@ form.addEventListener("submit", (e) => {
 
   //   alerting all the info
   //   alert(firstName + " " + lastName + " " + email + " " + password);
+  if (!isValid(firstName, nameRegex)) {
+    alert("wrong");
+    firstNameField.classList.add("invalid");
+  } else {
+    firstNameField.classList.remove("invalid");
+    alert("Name good");
+  }
 });
 
 function isValid(field, regex) {
-  return String(field).toLowerCase().match(complexRegex);
+  return String(field).toLowerCase().match(regex);
 }

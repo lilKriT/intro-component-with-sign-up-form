@@ -99,6 +99,12 @@ body {
   caret-color: var(--blue);
 }
 
+.ltc .sign-up-container input.invalid,
+.ltc .sign-up-container input.invalid:focus {
+  border: 2px solid var(--red);
+  color: var(--red);
+}
+
 .ltc .sign-up-container input:focus {
   outline: none;
   border: 2px solid var(--blue);
