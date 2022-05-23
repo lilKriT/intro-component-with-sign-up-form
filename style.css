@@ -113,8 +113,8 @@ body {
   caret-color: var(--blue);
 }
 
-.ltc .sign-up-container input:not([type="submit"]) {
-  background: calc(100% - 15px) center url("images/icon-error.svg") no-repeat;
+.ltc .sign-up-container .invalid input:not([type="submit"]) {
+  background: calc(100% - 1.5rem) center url("images/icon-error.svg") no-repeat;
 }
 
 .ltc .sign-up-container .invalid input,
