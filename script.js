@@ -20,13 +20,27 @@ form.addEventListener("submit", (e) => {
   //   alerting all the info
   //   alert(firstName + " " + lastName + " " + email + " " + password);
   if (!isValid(firstName, nameRegex)) {
-    alert("wrong");
-    // firstNameField.classList.add("invalid");
     firstNameField.parentElement.classList.add("invalid");
   } else {
-    // firstNameField.classList.remove("invalid");
     firstNameField.parentElement.classList.remove("invalid");
-    alert("Name good");
+  }
+
+  if (!isValid(lastName, nameRegex)) {
+    lastNameField.parentElement.classList.add("invalid");
+  } else {
+    lastNameField.parentElement.classList.remove("invalid");
+  }
+
+  if (!isValid(email, emailRegex)) {
+    emailField.parentElement.classList.add("invalid");
+  } else {
+    emailField.parentElement.classList.remove("invalid");
+  }
+
+  if (!isValid(password, passwordRegex)) {
+    passField.parentElement.classList.add("invalid");
+  } else {
+    passField.parentElement.classList.remove("invalid");
   }
 });
 
