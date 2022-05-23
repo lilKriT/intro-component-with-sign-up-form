@@ -47,24 +47,36 @@
               <p class="invalid-info">First Name cannot be empty</p>
             </div>
 
-            <input
-              type="text"
-              name="last-name"
-              id="last-name"
-              placeholder="Last Name"
-            />
-            <input
-              type="text"
-              name="email"
-              id="email"
-              placeholder="Email Address"
-            />
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Password"
-            />
+            <div class="input">
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="Last Name"
+              />
+              <p class="invalid-info">Last Name cannot be empty</p>
+            </div>
+
+            <div class="input">
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+              />
+              <p class="invalid-info">Looks like this is not an email</p>
+            </div>
+
+            <div class="input">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
+              <p class="invalid-info">Password cannot be empty</p>
+            </div>
+
             <!-- not sure which option here is better, button:submit or input:submit -->
             <button type="submit" id="submit">Claim your free trial</button>
             <!-- <input type="submit" value="Claim your free trial" /> -->
