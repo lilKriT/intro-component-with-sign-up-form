@@ -21,9 +21,11 @@ form.addEventListener("submit", (e) => {
   //   alert(firstName + " " + lastName + " " + email + " " + password);
   if (!isValid(firstName, nameRegex)) {
     alert("wrong");
-    firstNameField.classList.add("invalid");
+    // firstNameField.classList.add("invalid");
+    firstNameField.parentElement.classList.add("invalid");
   } else {
-    firstNameField.classList.remove("invalid");
+    // firstNameField.classList.remove("invalid");
+    firstNameField.parentElement.classList.remove("invalid");
     alert("Name good");
   }
 });

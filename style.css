@@ -91,12 +91,13 @@ body {
   margin-bottom: 16px;
 }
 
-.ltc div.input .invalid-info {
+.ltc .sign-up-container .invalid-info {
   color: var(--red);
   text-align: right;
   font-size: 0.75rem;
   font-weight: 500;
   font-style: italic;
+  display: none;
 }
 
 .ltc .sign-up-container input {
@@ -111,10 +112,14 @@ body {
   caret-color: var(--blue);
 }
 
-.ltc .sign-up-container input.invalid,
-.ltc .sign-up-container input.invalid:focus {
+.ltc .sign-up-container .invalid input,
+.ltc .sign-up-container .invalid input:focus {
   border: 2px solid var(--red);
   color: var(--red);
+}
+
+.ltc .sign-up-container .invalid .invalid-info {
+  display: block;
 }
 
 .ltc .sign-up-container input:focus {
@@ -137,10 +142,6 @@ body {
   letter-spacing: 2px;
   transition: all 0.3s;
   padding: 1.2rem 1rem 1rem;
-}
-
-.ltc .invalid-field {
-  color: var(--red);
 }
 
 .ltc .sign-up-container [type="submit"]:hover {
