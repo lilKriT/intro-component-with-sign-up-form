@@ -89,6 +89,7 @@ body {
 
 .ltc div.input {
   margin-bottom: 16px;
+  position: relative;
 }
 
 .ltc .sign-up-container .invalid-info {
@@ -110,6 +111,10 @@ body {
   font-weight: 600;
   color: var(--dark-blue);
   caret-color: var(--blue);
+}
+
+.ltc .sign-up-container input:not([type="submit"]) {
+  background: calc(100% - 15px) center url("images/icon-error.svg") no-repeat;
 }
 
 .ltc .sign-up-container .invalid input,
